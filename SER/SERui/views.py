@@ -42,7 +42,7 @@ def extract_feature(file_name, mfcc, chroma, mel):
     return result
 def load_data(test_size=0.25):
     x, y = [], []
-    for file in glob.glob("G:\speech-emotion-recognition-ravdess-data\\Actor_*\\*.wav"):
+    for file in glob.glob("D:\speech-emotion-recognition-ravdess-data\\Actor_*\\*.wav"):
         file_name = os.path.basename(file)
         emotion = emotions[file_name.split("-")[2]]
         if emotion not in observed_emotions:
